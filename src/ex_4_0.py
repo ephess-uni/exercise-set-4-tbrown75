@@ -19,7 +19,7 @@ def get_shutdown_events(logfile):
             log = f.readline()
             if not log:
                 break
-            if "shutdown" in log.lower():
+            if "shutdown initiated" in log.lower():
                 shutdown_events.append(log)
     return shutdown_events
         
