@@ -18,7 +18,7 @@ def num_shutdowns(logfile):
     Your docstring here.  Replace the pass keyword below with your implementation.
     """
     shutdown_count = get_shutdown_events(logfile)
-    return len(shutdown_count) * 2
+    return len(shutdown_count)
 
 
 # >>>> The code below will call your function and print the results
