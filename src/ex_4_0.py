@@ -14,7 +14,7 @@ def get_shutdown_events(logfile):
     Your docstring here.  Replace the pass keyword below with your implementation
     """
     shutdown_events = []
-    with open(FILENAME, 'r') as f:
+    with open(logfile, 'r') as f:
         while True:
             log = f.readline()
             if not log:
